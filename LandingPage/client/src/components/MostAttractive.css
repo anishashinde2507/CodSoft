@@ -1,0 +1,104 @@
+/* Services.css */
+
+.services {
+    padding: 40px;
+    background-color:var(--tertiary-color);
+    text-align: center;
+    color: #333;
+  }
+  
+  .services h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color:rgb(255, 137, 47);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+   
+  }
+  
+  .timeline-item:nth-child(odd) {
+    left: 0;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 50%;
+  }
+  
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 4px solid #3498db;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    right: -17px; 
+  }
+  
+  .timeline-item:nth-child(even)::after {
+    left: -17px;
+    right: auto;
+  }
+  
+  .timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #b9296f;
+  }
+  
+  .timeline-content p {
+    font-size: 1em;
+    color: #131313;
+  }
+  
+  .timeline-icon {
+    position: absolute;
+    top: 15px;
+    background-color: #34db42;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1;
+    right: -45px;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-icon {
+    left: -45px;
+    right: auto;
+  }
+  
+  
